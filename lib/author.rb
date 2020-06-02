@@ -6,11 +6,11 @@ class Author
   end
  
   def add_post(title)
-    post.author = self
+    posts.author = self
   end
 
   def add_post_by_title(title)
-    post = Post.new(title)
+    posts = Post.new(title)
     add_post(title)
   end
  
